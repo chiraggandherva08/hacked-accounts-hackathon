@@ -1,0 +1,105 @@
+#attendance-page-heading {
+  color: white;
+
+  text-align: center;
+  margin-top: 10px;
+}
+
+#attendance-list {
+  width: 100%;
+  background: inherit;
+
+  list-style-type: none;
+  color: rgb(235, 235, 235);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: auto;
+  margin-top: 20px;
+  background: rgb(31, 43, 78);
+
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.student-mark {
+  width: calc(100% - 40px);
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  background: inherit;
+
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.mark-present, .mark-absent  {
+  margin-left: 10px;
+
+  width: 70px;
+  height: 30px;
+
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.mark-present {
+  background: rgb(43, 185, 43);
+  color: rgb(50, 50, 50);
+}
+
+.mark-absent {
+  background: rgb(209, 76, 64);
+  color: black;
+}
+
+#submit-attendance {
+  width: 120px;
+  height: 35px;
+
+  background: rgb(87, 182, 255);
+ 
+  border-style: none;
+  border-radius: 10px;
+
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  #attendance-page-heading {
+    font-size: 20px;
+  }
+
+  .student-rollno {
+    font-size: 15px;
+  }
+
+  #attendance-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mark-present, .mark-absent  {
+    width: 55px;
+    height: 25px;
+  }
+}
